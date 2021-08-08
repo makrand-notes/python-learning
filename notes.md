@@ -32,3 +32,23 @@ Private members are accessble via names mangling using format _className__member
 
     print(object.Player__sport)
 
+To declare abstract class and methods, you need to import ABC(Abstract Base class) and abstractmethod
+
+    class Bike(ABC):
+    
+        @abstractmethod
+        def run(self):
+            pass
+            
+    class Pulsar(Bike):
+        def run(self)
+            print('this is pulsar implementation')
+            
+    classs Honda(Bike)
+    
+        def run(self):
+        
+            print('This is honda implementation')
+           
+Abstract classes can not be instantiated
+
