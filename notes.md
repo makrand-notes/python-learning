@@ -1,10 +1,10 @@
 Class and Object Declaration
 
-  class Person:
+    class Person:
     def __init__(self, name):
         self.name = name
         
-  class Player(Person):
+    class Player(Person):
   
     def __init__(self, country):
         self.country = country
