@@ -37,7 +37,7 @@ Animal.name = 'abc' will change for both instances dog and cat.
 
 However cat.name = 'cat' will not change animal name for dog object. 
 
-To make a instance variable private, use double underscore
+To make a instance variable private, use double underscore. You can also use __ to make methods private as well. 
 
     class Player(Person):
       
