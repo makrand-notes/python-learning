@@ -42,7 +42,9 @@ To make a instance variable private, use double underscore. You can also use __ 
     class Player(Person):
       
         __sport = 'cricket'
-        
+      
+Names Mangling : Private members are stored in the format _classname__membername 
+
 ### Method:
 
 First parameter in any method is always self
@@ -83,6 +85,8 @@ Method/Attribute resolution happens from left to right i.e. if same attribute is
 
 To declare abstract class and methods, you need to import ABC(Abstract Base class) and abstractmethod
 
+from abc import ABC, abstractmethod
+
     class Bike(ABC):
     
         @abstractmethod
@@ -96,8 +100,9 @@ To declare abstract class and methods, you need to import ABC(Abstract Base clas
     classs Honda(Bike)
     
         def run(self):
-        
             print('This is honda implementation')
            
 Abstract classes can not be instantiated
+
+To declare an enum you need to use : import enum 
 
