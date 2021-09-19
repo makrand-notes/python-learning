@@ -37,7 +37,7 @@ Animal.name = 'abc' will change for both instances dog and cat.
 
 However cat.name = 'cat' will not change animal name for dog object. 
 
-To make a instance variable private, use double underscore. You can also use __ to make methods private as well. 
+To make a instance variable private, use double underscore whereas to make it protected use single underscore(_). You can also use __ to make methods private as well. 
 
     class Player(Person):
       
@@ -106,3 +106,8 @@ Abstract classes can not be instantiated
 
 To declare an enum you need to use : import enum 
 
+class GuitarType(enum.ENUM):
+    ACOUSTIC, ELECTRIC, UNKNOWN = 1, 2,3
+
+
+Python does not support overloading by default. For a class all the data members and methods that we declare are stored in a class object as an attribute. An object can have only 1 attribute of given name
