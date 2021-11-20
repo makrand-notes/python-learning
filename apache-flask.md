@@ -26,3 +26,7 @@ Steps for windows enviornment :
 
 SQLAlchemy is an ORM tool to connect to database. 
 
+Templates are used for generating html response containing both static and dynamic content
+
+Sentry is an open source logging library
+
